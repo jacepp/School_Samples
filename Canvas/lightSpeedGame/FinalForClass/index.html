@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Light Speed</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Michroma|Orbitron' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#insert").click(function(){
+				var name=$("#Name").val();
+				self.location='game.php?name=' + name;
+				return false;
+			})//end .click
+
+		});
+		</script>
+	</head>
+	<body>
+
+		<header>
+			<h1>Light Speed</h1>
+			<div id="fakeForm">
+				<label>Name: </label> <input id="Name" type="text" />
+				<a id="insert" title="Insert Data" href="#">START</a>
+			</div>
+		</header>
+
+
+
+
+
+		<div id="background"></div>
+    	<div id="midground"></div>
+    	<div id="foreground"></div>
+
+	</body>
+</html>
